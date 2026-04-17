@@ -2,4 +2,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Matrixmedia_Instafeed', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Rinadev_Instafeed', __DIR__);

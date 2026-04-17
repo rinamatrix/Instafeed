@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!-- Tab (Ensure it has an "id") -->
+        <tab id="matrixinsta_tab" translate="label" sortOrder="100">
+            <label>Custom Tab</label>
+        </tab>
+
+        <!-- Section (Ensure it has an "id") -->
+        <section id="matrixinsta_section" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Custom Section</label>
+            <tab>matrixinsta_tab</tab>
+            <resource>Rinadev_Instafeed::config</resource>
+
+            <!-- Group (Ensure it has an "id") -->
+            <group id="matrixinsta_group" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Custom Group</label>
+
+                <!-- Field (Ensure it has an "id") -->
+                <field id="matrixinsta_accesstoken" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Insta feed Access token</label>
+                    <comment>Enter Access token here</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
